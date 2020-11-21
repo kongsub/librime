@@ -50,7 +50,6 @@ set(rime_dict_deps
 set(rime_gears_deps
     ${ICONV_LIBRARIES}
     ${ICU_LIBRARIES}
-    ${Opencc_LIBRARY})
 set(rime_levers_deps "")
 
 if(MINGW)

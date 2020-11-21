@@ -14,13 +14,6 @@ libmarisa-dev
 
 RUN apt install -y git
 
-# Manually install libopencc
-RUN git clone https://github.com/BYVoid/OpenCC.git
-WORKDIR OpenCC/
-RUN apt install -y doxygen
-RUN make
-RUN make install
-
 # Fix libgtest problem during compiling
 WORKDIR /usr/src/gtest
 RUN cmake CMakeLists.txt

@@ -59,8 +59,6 @@ engine:
     - script_translator@pinyin
   filters:
     - reverse_lookup_filter@cangjie_lookup
-    - simplifier@zh_simp
-    - simplifier@zh_tw
     - uniquifier
 
 speller:
@@ -138,7 +136,6 @@ zh_simp:
 
 zh_tw:
   option_name: zh_tw
-  opencc_config: t2tw.json
 
 punctuator:
   import_preset: default
